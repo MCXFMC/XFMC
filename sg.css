@@ -172,10 +172,18 @@ animation: kolor 10s infinite;
   }
 
 
-@media screen and (max-width: 768px) {
-    .server-info-section,
-    .news-section {
-        flex: 100%; 
+  @media screen and (max-width: 768px) {
+    .box {
+        width: 90%; /* Adjust the width as needed */
+        margin: 20px auto; /* Adjust the margin as needed */
+    }
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .box {
+        width: 95%; /* Adjust the width as needed */
+        margin: 10px auto; /* Adjust the margin as needed */
     }
 }
 
