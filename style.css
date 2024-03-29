@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+background-color: rgba(255, 255, 0, 0.178);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    position: fixed; 
+    width: 100%;
+    font-family: 'minecraftr';
+    animation: slideIn 3s forwards;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+#ho:hover {
+    color: orange;
+}
+
+body {
+    background-image: url(nastrone.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+margin: 0 auto;
+}
+
+#xflogo {
+font-family: 'minecraft';
+animation: kolor 10s infinite;
+}
+
+.centered-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(50vh - 25px); 
+}
+
+#main-logo {
+    font-size: 80px;
+    font-family: 'minecraft';
+    margin-bottom: -20px; 
+    animation: kolor 10s infinite, slideIn 3s forwards; 
+
+}
+
+#server-info {
+    font-family: 'minecraft';
+    font-size: 20px;
+    animation: kolorbox 5s infinite, pokaz 4s forwards;
+}
+#regulamin-n {
+    font-size: 40px; 
+    text-align: center; 
+    margin-top: calc(-5vh - 20px); 
+    font-family: 'minecraft'; 
+    animation: regu 10s infinite, slideIn2 4s forwards; 
+
+}
+
+
+#xflogo:hover {
+    text-shadow: 5px 5px 5px purple;
+}
+
+#regulamin {
+    background-color: rgba(255, 166, 0, 0.466);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 50px auto; 
+    text-align: left;
+    animation: pokaz 5s forwards, glowsuper 15s infinite;
+}
+
+#nowosci {
+    background-color: rgba(255, 166, 0, 0.466);
+    border-radius: 10px;
+    padding: 20px;
+    width: 28%;
+    text-align: center;
+    animation: pokaz 5s forwards;
+}
+#informacje {
+    background-color: rgba(255, 166, 0, 0.466);
+    border-radius: 10px;
+    padding: 20px;
+    width: 38%;
+    text-align: center;
+    animation: pokaz 5s forwards, glowsuper 15s infinite;
+}
+#socialmedia {
+    background-color: rgba(255, 166, 0, 0.466);
+    border-radius: 10px;
+    padding: 20px;
+    width: 28%;
+    text-align: center;
+    animation: pokaz 5s forwards;
+}
+#socialmedia, #nowosci, #informacje {
+    display: inline;
+    margin: 1%;
+    float: left;
+    margin-top: 100px;
+}
+.footer-bar {
+    float: left;
+    margin: 0%;
+}
+.footer-bar {
+    background-color: rgba(112, 73, 0, 0.493);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    position: fixed; /* zmienione z absolute */
+    bottom: 0;
+    
+}
+#discordo {
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
+@media screen and (max-width: 768px) {
+    .box {
+        width: 90%; /* Adjust the width as needed */
+        margin: 20px auto; /* Adjust the margin as needed */
+    }
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .box {
+        width: 95%; /* Adjust the width as needed */
+        margin: 10px auto; /* Adjust the margin as needed */
+    }
+}
+
+
+#aktualnoscih1 {
+    animation: rainbow2 15s infinite;
+    font-family: 'minecrafti';
+}
+
+#regular {
+    font-family: 'regulasr';
+    color: rgb(85, 61, 61);
+}
+#regulari {
+    font-family: 'regulasr';
+    color: rgb(111, 55, 148);
+}
+
+#regulari::selection {
+    color: rgb(111, 55, 148);
+    background: orange;
+  }
+  #aktualnoscih1::selection {
+    color: rgb(111, 55, 148);
+    background: orange;
+  }
+  #regular::selection {
+    color: rgb(85, 61, 61);
+    background: orange;
+  }
+
+
+
+
+@font-face {
+    font-family: 'regulasr';
+    src: url('MinecraftRegular-Bmg3.otf') format('truetype');
+
+}
+
+/* Fonty */
+
+
+@font-face {
+    font-family: 'minecraft';
+    src: url('MinecraftBold-nMK1.otf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'minecraftr';
+    src: url('MinecraftRegular-Bmg3.otf') format('truetype');
+
+}
+@font-face {
+    font-family: 'minecrafti';
+    src: url('MinecraftItalic-R8Mo.otf') format('truetype');
+
+}
+
+
+
+/* Animacje */
+
+@keyframes regu{
+    100%,0%{
+        color: rgb(255, 43, 43);
+    }
+    30%{
+        color: darkorange;
+    }
+    
+}
+@keyframes rainbow2{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+}
+@keyframes rainbow{
+    100%,0%{
+        background-color: rgb(255,0,0);
+    }
+    8%{
+        background-color: rgb(255,127,0);
+    }
+    16%{
+        background-color: rgb(255,255,0);
+    }
+    25%{
+        background-color: rgb(127,255,0);
+    }
+    33%{
+        background-color: rgb(0,255,0);
+    }
+    41%{
+        background-color: rgb(0,255,127);
+    }
+    50%{
+        background-color: rgb(0,255,255);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+    }
+    66%{
+        background-color: rgb(0,0,255);
+    }
+    75%{
+        background-color: rgb(127,0,255);
+    }
+    83%{
+        background-color: rgb(255,0,255);
+    }
+    91%{
+        background-color: rgb(255,0,127);
+    }
+}
+
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes slideIn2 {
+    0% {
+        transform: translateY(-100%); 
+        opacity: 0; 
+    }
+    50% {
+        transform: translateY(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes glowsuper {
+    100%,0%{
+        box-shadow: 0px 0px 40px rgb(255,0,0);
+    }
+    8%{
+        box-shadow: 0px 0px 40px rgb(255,127,0);
+    }
+    16%{
+        box-shadow: 0px 0px 40px rgb(255,255,0);
+    }
+    25%{
+        box-shadow: 0px 0px 40px rgb(127,255,0);
+    }
+    33%{
+        box-shadow: 0px 0px 40px rgb(0,255,0);
+    }
+    41%{
+        box-shadow: 0px 0px 40px rgb(0,255,127);
+    }
+    50%{
+        box-shadow: 0px 0px 40px rgb(0,255,255);
+    }
+    58%{
+        box-shadow: 0px 0px 40px rgb(0,127,255);
+    }
+    66%{
+        box-shadow: 0px 0px 40px rgb(0,0,255);
+    }
+    75%{
+        box-shadow: 0px 0px 40px rgb(127,0,255);
+    }
+    83%{
+        box-shadow: 0px 0px 40px rgb(255,0,255);
+    }
+    91%{
+        box-shadow: 0px 0px 40px rgb(255,0,127);
+    }
+}
+
+
+
+@keyframes slideIn2 {
+    0% {
+        transform: translateY(-50%); 
+        opacity: 0; 
+    }
+    50% {
+        transform: translateY(-50%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes pokaz {
+    0% {
+        opacity: 0; 
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+
+@keyframes kolor {
+    0% {
+        color: rgb(175, 0, 175); 
+    }
+    25% {
+        color: rgb(219, 0, 219); 
+    }
+    50% {
+        color: rgb(175, 0, 175); 
+    }
+    75% {
+        color: rgb(219, 0, 219); 
+    }
+100% {
+        color: rgb(175, 0, 175); 
+}
+}
+
+@keyframes kolorbox {
+    0% {
+        color: orange; 
+    }
+    25% {
+        color: yellow; 
+    }
+    50% {
+        color: orange; 
+    }
+    75% {
+        color: yellow; 
+    }
+100% {
+        color: orange; 
+}
+}
+
+@keyframes kolorlogo {
+
+	0% {
+		color: red;
+	}
+	10% {
+		color: orange;
+	}
+	20% {
+		color: yellow;
+	}
+	30% {
+		color: lime;
+	}
+	40% {
+		color: green;
+	}
+	50% {
+		color: cyan;
+	}
+	60% {
+		color: blue;
+	}
+	70% {
+		color: purple;
+	}
+	80% {
+		color: violet;
+	}
+	90% {
+		color: pink;
+	}
+	100% {
+		color: red;
+	}
+
+}
